@@ -21,3 +21,16 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/.vs/slnx.sqlite
+/.vs/ThreeFoldCS3650/config/applicationhost.config
+/.vs/ThreeFoldCS3650/FileContentIndex/1fe1ae7a-35ee-4ddb-9eed-65f3b2e1709d.vsidx
+/.vs/ThreeFoldCS3650/FileContentIndex/a086795d-ecd2-4988-97fb-71329b2bfd86.vsidx
+/.vs/ThreeFoldCS3650/FileContentIndex/b10a7828-e4a6-4d3f-a993-2dba29a9619e.vsidx
+/.vs/ThreeFoldCS3650/FileContentIndex/d81340e5-6350-472f-88b8-dff97357cdcc.vsidx
+/.vs/ThreeFoldCS3650/FileContentIndex/fd5059b8-2332-45d5-b881-82d428c7acc7.vsidx
+/.vs/ThreeFoldCS3650/v17/.wsuo
+/.vs/ThreeFoldCS3650/v17/DocumentLayout.backup.json
+/.vs/ThreeFoldCS3650/v17/DocumentLayout.json
+/.vs/ThreeFoldCS3650/FileContentIndex/7357d204-e977-4917-adf9-39a81ce398d5.vsidx
+/.vs/ThreeFoldCS3650/FileContentIndex/a3d052e0-078a-487c-95e6-5a9764c1d7f0.vsidx
+/.vs/VSWorkspaceState.json
