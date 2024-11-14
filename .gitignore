@@ -34,3 +34,4 @@ yarn-error.log*
 /.vs/ThreeFoldCS3650/FileContentIndex/7357d204-e977-4917-adf9-39a81ce398d5.vsidx
 /.vs/ThreeFoldCS3650/FileContentIndex/a3d052e0-078a-487c-95e6-5a9764c1d7f0.vsidx
 /.vs/VSWorkspaceState.json
+*.vsidx
