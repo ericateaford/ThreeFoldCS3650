@@ -1,2 +1,10 @@
-//used to store data from threefold app
-[]
+{
+  "users": {
+    "9ea094a7-abdd-4980-8928-82e883dff805": {
+      "username": "test user",
+      "collection": {},
+      "notes": {},
+      "natal-chart": {}
+    }
+  }
+}
