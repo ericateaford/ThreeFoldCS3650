@@ -1,6 +1,7 @@
 const express = require("express");
 const { readData, writeData } = require("../util");
 const { v4: generateId } = require("uuid");
+const { hash } = require('bcryptjs')
 
 const router = express.Router();
 
@@ -13,21 +14,28 @@ router.get("/data", (req, res) => {
   }
 });
 
-router.post("/user/add", (req, res) => {
+router.post("/user/add", async (req, res) => {
   const data = readData();
 
   const newItem = req.body;
   if (!newItem) {
     //checks to ensure blank field is not being saved
     return res.status(400).json({ error: "Entry cannot be empty" }); //bad request error
-  } else if (!newItem.username) {
-    return res.status(400).json({ error: "Entry needs username field" }); //bad request error
+  } 
+  else if (!newItem.username) {
+    return res.status(400).json({ error: "Entry needs username field" });
+  } 
+  else if (!newItem.password) {
+    return res.status(400).json({ error: "Entry needs password field" });
   }
   // TODO Should also check if the username is already being used 
 
-  userId = generateId();
+  const userId = generateId();
+  const hashedPass = await hash(newItem.password, 10)
+
   data.users[userId] = {
     username: newItem.username,
+    password: hashedPass,
     collection: {},
     notes: {},
     "natal-chart": {},
