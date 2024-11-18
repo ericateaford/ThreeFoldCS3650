@@ -14,7 +14,7 @@ import Splashtwo from './Splashtwo.js';
 
 import './App.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
+import Collection from './Collection.js';
 
 
 
@@ -43,6 +43,9 @@ function App() {
             <li>
               <Link to="/splash">Splashtwo</Link>
             </li>
+            <li>
+              <Link to="/Collection">Collection</Link>
+            </li>
             {/* ... other links */}
           </ul>
         </nav>
@@ -56,7 +59,8 @@ function App() {
           <Route path="/search" element={<Search />} />
           <Route path="/splash" element={<Splash />} />
           <Route path="/splashtwo" element={<Splashtwo />} />
-          {/* ... other routes */}
+              {/* ... other routes */}
+          <Route path="/Collection" element={<Collection /> } />
         </Routes>
      
     </Router>
