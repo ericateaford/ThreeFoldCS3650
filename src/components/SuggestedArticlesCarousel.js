@@ -10,24 +10,32 @@ function SuggestedArticlesCarousel() {
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="cards-wrapper">
+      <a href="guideToCrystals.js">
       <div class="card mb-5">
-      <img src="/images/Rocks.png" class="planner card-img-top" alt="..." />
+      <img src="/images/Rocks.png" class="planner card-img-top"  alt="..."/>
         <div class="card-body">
-         
+        
         </div>
+      
       </div>
+      </a>
+     
+     <a href="MoonSign.js">
       <div class="card d-none d-md-block">
       <img src="/images/Stars.png" class="planner card-img-top" alt="..." />
         <div class="card-body">
-         
         </div>
       </div>
+      </a>
+
+      <a href="Intentions.js">
       <div class="card d-none d-md-block">
       <img src="/images/Moon.png" class="planner card-img-top" alt="..." />
         <div class="card-body">
          
         </div>
       </div>
+      </a>
     </div>
     </div>
   </div>

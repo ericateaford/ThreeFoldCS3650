@@ -9,7 +9,9 @@ import Notes from './Notes.js';
 import Search from './Search.js';
 import Splash from './Splash.js';
 import Splashtwo from './Splashtwo.js';
+
 // ... import other pages
+
 import './App.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
