@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom" //Import link from react-router-dom
 
 function DailyRitualCarousel() {
     return (
@@ -12,16 +13,23 @@ function DailyRitualCarousel() {
         <div class="card-body">
         </div>
       </div>
+      
+      <Link to="Citrine">
       <div class="card d-none d-md-block">
       <img src="/images/citrine.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         </div>
       </div>
+      </Link>
+
+      <Link to="Routine">
       <div class="card d-none d-md-block">
       <img src="/images/teaset.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         </div>
       </div>
+      </Link>
+      
     </div>
     </div>
   </div>

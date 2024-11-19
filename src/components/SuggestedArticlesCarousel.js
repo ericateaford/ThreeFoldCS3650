@@ -1,6 +1,6 @@
 
 
-
+import {Link} from "react-router-dom" //Import link from react-router-dom
 
 function SuggestedArticlesCarousel() {
     return (
@@ -10,33 +10,33 @@ function SuggestedArticlesCarousel() {
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="cards-wrapper">
-      <a href="guideToCrystals.js">
+
+      <Link to="/Crystals">
       <div class="card mb-5">
       <img src="/images/Rocks.png" class="planner card-img-top"  alt="..."/>
         <div class="card-body">
-        
         </div>
-      
       </div>
-      </a>
-     
-     <a href="MoonSign.js">
+
+      </Link>     
+
+
+      <Link to="/MoonSign">
       <div class="card d-none d-md-block">
       <img src="/images/Stars.png" class="planner card-img-top" alt="..." />
         <div class="card-body">
         </div>
       </div>
-      </a>
+      </Link>
 
-      <a href="Intentions.js">
+      <Link to="/Intentions">
       <div class="card d-none d-md-block">
       <img src="/images/Moon.png" class="planner card-img-top" alt="..." />
         <div class="card-body">
          
         </div>
       </div>
-      </a>
-    </div>
+      </Link>    </div>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

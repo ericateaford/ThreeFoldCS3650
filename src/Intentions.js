@@ -1,5 +1,7 @@
-function Intentions() {
-    return(
+import React from "react";
+
+const Intentions = () => {
+  return(
       <div>
      <h1>Connecting Intentions With the Moon Cycle</h1>
      <p>Connecting intentions with the moon cycle is a powerful way to align personal goals and spiritual practices with the natural rhythms of the universe.

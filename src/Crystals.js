@@ -1,6 +1,7 @@
 import React from "react";
 
-function guideToCrystals() {
+const Crystals = () => {
+
   return (
     <div>  
   <h1>Your Guide To Crystals</h1>
@@ -21,4 +22,4 @@ function guideToCrystals() {
   );
 }
 
-export default guideToCrystals;
+export default Crystals;

@@ -1,4 +1,4 @@
-function MoonSign() {
+const MoonSign = () => {
 
     return(
     <div>

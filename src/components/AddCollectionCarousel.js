@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom" //Import link from react-router-dom
 
 function AddCollectionCarousel() {
     return (
@@ -7,21 +8,30 @@ function AddCollectionCarousel() {
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="cards-wrapper">
+        <Link to="/Sage">
       <div class="card mb-5">
         <img src="/images/Sage.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         </div>
       </div>
+      </Link>
+
+      <Link to="/Citrine">
       <div class="card d-none d-md-block">
       <img src="/images/citrine.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         </div>
       </div>
+      </Link>
+
+      <Link to="/Candle">
       <div class="card d-none d-md-block">
       <img src="/images/candle.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         </div>
       </div>
+      </Link>
+
     </div>
     </div>
    

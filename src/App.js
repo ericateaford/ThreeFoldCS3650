@@ -14,10 +14,15 @@ import Splashtwo from './Splashtwo.js';
 import './App.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Collection from './Collection.js';
-import guideToCrystals from "./guideToCrystals.js";
-
-
-
+import Crystals from "./Crystals.js";
+import Intentions from "./Intentions.js";
+import MoonSign from "./MoonSign.js";
+import Meditate from "./Meditate.js";
+import Nature from "./Nature.js";
+import Sage from "./Sage.js";
+import Citrine from "./Citrine.js";
+import Candle from "./Candle.js";
+import Routine from "./Routine.js";
 
 function App() {
   return (
@@ -62,7 +67,16 @@ function App() {
           <Route path="/splashtwo" element={<Splashtwo />} />
               {/* ... other routes */}
           <Route path="/Collection" element={<Collection /> } />
-          <Route path="/guideToCrystals" element={<guideToCrystals/>}/>
+          <Route path="/Crystals" element={<Crystals/>}/>
+          <Route path="/Intentions" element={<Intentions/>}/>
+          <Route path="/MoonSign" element={<MoonSign/>}/>
+          <Route path="/Meditate" element={<Meditate/>}/>
+          <Route path="/Nature" element={<Nature/>}/>
+          <Route path="/Sage" element={<Sage/>}/>
+          <Route path="/Citrine" element={<Citrine/>}/>
+          <Route path="/Candle" element={<Candle/>}/>
+          <Route path="/Routine" element={<Routine/>}/>
+
         </Routes>
      
     </Router>
