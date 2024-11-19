@@ -9,12 +9,12 @@ import Notes from './Notes.js';
 import Search from './Search.js';
 import Splash from './Splash.js';
 import Splashtwo from './Splashtwo.js';
-
 // ... import other pages
 
 import './App.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Collection from './Collection.js';
+import guideToCrystals from "./guideToCrystals.js";
 
 
 
@@ -46,6 +46,7 @@ function App() {
             <li>
               <Link to="/Collection">Collection</Link>
             </li>
+        
             {/* ... other links */}
           </ul>
         </nav>
@@ -61,6 +62,7 @@ function App() {
           <Route path="/splashtwo" element={<Splashtwo />} />
               {/* ... other routes */}
           <Route path="/Collection" element={<Collection /> } />
+          <Route path="/guideToCrystals" element={<guideToCrystals/>}/>
         </Routes>
      
     </Router>
