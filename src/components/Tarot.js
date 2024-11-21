@@ -1,4 +1,5 @@
 
+import {Link} from "react-router-dom" //Import link from react-router-dom
 
 function Tarot() {
     return (
@@ -8,6 +9,8 @@ function Tarot() {
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="cards-wrapper">
+
+        <Link to="/Cards">
       <div class="card">
         <img src="/images/Journal.png" class="card-img-top" alt="..."/>
         <div class="card-body">
@@ -16,6 +19,9 @@ function Tarot() {
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
+      </Link>
+
+      <Link to="/MoonMeaning">
       <div class="card d-none d-md-block">
         <img src="/images/Sky.png" class="card-img-top" alt="..."/>
         <div class="card-body">
@@ -24,6 +30,9 @@ function Tarot() {
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
+      </Link>
+
+      <Link to="/MoonSign">
       <div class="card d-none d-md-block">
         <img src="/images/Stars.png" class="card-img-top" alt="..."/>
         <div class="card-body">
@@ -32,6 +41,7 @@ function Tarot() {
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
+      </Link>
     </div>
     </div>
   </div>

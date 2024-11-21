@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom" //Import link from react-router-dom
 
 
 function Guidance() {
@@ -8,6 +9,8 @@ function Guidance() {
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="cards-wrapper">
+
+        <Link to="/Pendulum">
       <div class="card">
       <img src="/images/necklace.png" class="card-img-top" alt="..."/>
         <div class="card-body">
@@ -16,6 +19,9 @@ function Guidance() {
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
+      </Link>
+
+      <Link to="/SpellJars">
       <div class="card d-none d-md-block">
       <img src="/images/rose.png" class="card-img-top" alt="..."/>
         <div class="card-body">
@@ -24,6 +30,9 @@ function Guidance() {
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
+      </Link>
+
+      <Link to="/Citrine">
       <div class="card d-none d-md-block">
       <img src="/images/Rocks.png" class="card-img-top" alt="..."/>
         <div class="card-body">
@@ -32,6 +41,7 @@ function Guidance() {
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
+      </Link>
     </div>
     </div>
   </div>

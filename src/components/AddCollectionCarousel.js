@@ -1,3 +1,4 @@
+import React from "react";
 import {Link} from "react-router-dom" //Import link from react-router-dom
 
 function AddCollectionCarousel() {
@@ -36,11 +37,11 @@ function AddCollectionCarousel() {
     </div>
    
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" aria-label="Previous">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only"></span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" aria-label="Next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only"></span>
   </a>

@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom" //Import link from react-router-dom
 
 function Meditation() {
     return (
@@ -7,6 +8,8 @@ function Meditation() {
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="cards-wrapper">
+
+      <Link to="/Meditate">
       <div class="card">
       <img src="/images/Meditate.png" class="card-img-top" alt="..."/>
         <div class="card-body">
@@ -15,6 +18,9 @@ function Meditation() {
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
+      </Link>
+
+      <Link to="/Candle">
       <div class="card d-none d-md-block">
       <img src="/images/lotscandle.png" class="card-img-top" alt="..."/>
         <div class="card-body">
@@ -23,6 +29,8 @@ function Meditation() {
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
+      </Link>
+      
       <div class="card d-none d-md-block">
       <img src="/images/Yoga.png" class="card-img-top" alt="..."/>
         <div class="card-body">

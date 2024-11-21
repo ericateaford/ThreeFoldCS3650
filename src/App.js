@@ -23,6 +23,10 @@ import Sage from "./Sage.js";
 import Citrine from "./Citrine.js";
 import Candle from "./Candle.js";
 import Routine from "./Routine.js";
+import Cards from "./Cards.js";
+import MoonMeaning from "./MoonMeaning.js";
+import Pendulum from "./Pendulum.js";
+import SpellJars from "./SpellJars.js";
 
 function App() {
   return (
@@ -76,6 +80,10 @@ function App() {
           <Route path="/Citrine" element={<Citrine/>}/>
           <Route path="/Candle" element={<Candle/>}/>
           <Route path="/Routine" element={<Routine/>}/>
+          <Route path="/Cards" element={<Cards/>}/>
+          <Route path="/MoonMeaning" element={<MoonMeaning/>}/>
+          <Route path="/Pendulum" element={<Pendulum/>}/>
+          <Route path="/SpellJars" element={<Pendulum/>}/>
 
         </Routes>
      
