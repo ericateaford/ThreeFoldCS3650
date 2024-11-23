@@ -52,10 +52,6 @@ function App() {
             <li>
               <Link to="/splash">Splashtwo</Link>
             </li>
-            <li>
-              <Link to="/Collection">Collection</Link>
-            </li>
-        
             {/* ... other links */}
           </ul>
         </nav>

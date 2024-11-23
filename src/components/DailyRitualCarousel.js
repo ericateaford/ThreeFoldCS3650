@@ -24,7 +24,7 @@ function DailyRitualCarousel() {
 
       <Link to="Routine">
       <div class="card d-none d-md-block">
-      <img src="/images/teaset.png" class="card-img-top" alt="..."/>
+      <img src="/images/tree.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         </div>
       </div>

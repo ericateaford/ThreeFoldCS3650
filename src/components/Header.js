@@ -1,12 +1,11 @@
-// import Logo from "./images/logo.png";
+
 
 function Header() {
     return (
   
   <div>
     <div class="blackbar">
-      {/* <img src={Logo} class="logo" alt="logo" /> */}
-      yes
+    <img src="/images/logo.png" class="logo card-img-top" alt="..."/>
       </div>
   </div> 
   

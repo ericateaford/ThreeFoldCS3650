@@ -1,7 +1,8 @@
 import SuggestedArticlesCarousel from './components/SuggestedArticlesCarousel.js'
 import Footer from './components/Footer.js'
-// import Header from './components/Header.js' 
+import Header from './components/Header.js' 
 import PiscesNatal from "./piscesnatal.png";
+
 
 
 
@@ -11,7 +12,7 @@ const Natal = () => {
     return (
 
 <div>
-{/* <Header /> */}
+<Header />
 <h5 class="float-center mb-2">As a</h5>
 <h1 class="float-center mb-3">Pisces Sun</h1>
 <h5 class="float-center mb-5">take special note to your dreams and emotions today</h5>
