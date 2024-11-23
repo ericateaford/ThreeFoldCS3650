@@ -11,12 +11,10 @@ function Guidance() {
       <div class="cards-wrapper">
 
         <Link to="/Pendulum">
-      <div class="card">
+      <div class="card mb-5">
       <img src="/images/necklace.png" class="card-img-top" alt="..."/>
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          
         </div>
       </div>
       </Link>
@@ -25,9 +23,7 @@ function Guidance() {
       <div class="card d-none d-md-block">
       <img src="/images/rose.png" class="card-img-top" alt="..."/>
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+         
         </div>
       </div>
       </Link>
@@ -36,9 +32,7 @@ function Guidance() {
       <div class="card d-none d-md-block">
       <img src="/images/Rocks.png" class="card-img-top" alt="..."/>
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+         
         </div>
       </div>
       </Link>
