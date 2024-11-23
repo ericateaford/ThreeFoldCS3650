@@ -14,7 +14,7 @@ function Tarot() {
       <div class="card mb-5">
         <img src="/images/Journal.png" class="card-img-top" alt="..."/>
         <div class="card-body">
-         
+        <div class="carouselTitles">Finding The Right Tarot Deck</div>
         </div>
       </div>
       </Link>
@@ -23,7 +23,7 @@ function Tarot() {
       <div class="card d-none d-md-block">
         <img src="/images/Sky.png" class="card-img-top" alt="..."/>
         <div class="card-body">
-         
+        <div class="carouselTitles">The Moon and Her Meaning In Tarot</div>
         </div>
       </div>
       </Link>
@@ -32,7 +32,7 @@ function Tarot() {
       <div class="card d-none d-md-block">
         <img src="/images/Stars.png" class="card-img-top" alt="..."/>
         <div class="card-body">
-         
+        <div class="carouselTitles">Your Meaning in the Universe</div>
         </div>
       </div>
       </Link>

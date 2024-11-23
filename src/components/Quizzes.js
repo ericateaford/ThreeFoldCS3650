@@ -4,26 +4,26 @@ function Quizzes() {
     return (
       
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-             <div> <h3 class="carouselheading text-start">Quizzes</h3> </div>
+             <div> <h3 class="carouselheading text-start">About Your Sign</h3> </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="cards-wrapper">
       <div class="card mb-5">
         <img src="/images/decor.png" class="card-img-top" alt="..."/>
         <div class="card-body">
-         
+        <div class="carouselTitles">Which Witch Are You?</div>
         </div>
       </div>
       <div class="card d-none d-md-block">
         <img src="/images/goat.png" class="card-img-top" alt="..."/>
         <div class="card-body">
-         
+        <div class="carouselTitles">Your Zodiac Sign Compatibility</div>
         </div>
       </div>
       <div class="card d-none d-md-block">
         <img src="/images/citrine.png" class="card-img-top" alt="..."/>
         <div class="card-body">
-         
+        <div class="carouselTitles">Crystals to Compliment Your Zodiac Sign</div>
         </div>
       </div>
     </div>

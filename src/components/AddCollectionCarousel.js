@@ -13,6 +13,7 @@ function AddCollectionCarousel() {
       <div class="card mb-5">
         <img src="/images/Sage.png" class="card-img-top" alt="..."/>
         <div class="card-body">
+        <div class="carouselTitles">Sage Benefits</div>
         </div>
       </div>
       </Link>
@@ -21,6 +22,7 @@ function AddCollectionCarousel() {
       <div class="card d-none d-md-block">
       <img src="/images/citrine.png" class="card-img-top" alt="..."/>
         <div class="card-body">
+        <div class="carouselTitles">Citrine and Mood Improvement</div>
         </div>
       </div>
       </Link>
@@ -29,9 +31,11 @@ function AddCollectionCarousel() {
       <div class="card d-none d-md-block">
       <img src="/images/candle.png" class="card-img-top" alt="..."/>
         <div class="card-body">
+        <div class="carouselTitles">Candles Colours and Their Meanings</div>
         </div>
       </div>
       </Link>
+
 
     </div>
     </div>

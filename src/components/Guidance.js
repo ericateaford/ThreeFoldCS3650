@@ -14,7 +14,7 @@ function Guidance() {
       <div class="card mb-5">
       <img src="/images/necklace.png" class="card-img-top" alt="..."/>
         <div class="card-body">
-          
+        <div class="carouselTitles">The Power of Pendulums</div>
         </div>
       </div>
       </Link>
@@ -23,7 +23,7 @@ function Guidance() {
       <div class="card d-none d-md-block">
       <img src="/images/rose.png" class="card-img-top" alt="..."/>
         <div class="card-body">
-         
+        <div class="carouselTitles">Spell Jars and Letting Go</div>
         </div>
       </div>
       </Link>
@@ -32,7 +32,7 @@ function Guidance() {
       <div class="card d-none d-md-block">
       <img src="/images/Rocks.png" class="card-img-top" alt="..."/>
         <div class="card-body">
-         
+        <div class="carouselTitles">Your Guide to Crystals</div>
         </div>
       </div>
       </Link>

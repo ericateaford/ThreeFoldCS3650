@@ -7,17 +7,20 @@ body {
   background-color: #282c34;
   color: white;
   padding: 40px;
-  font-family: Sans-Serif;
   text-align: center;
+  background-image: url("images/foliagefinal1.jpg");
+  background-size: cover;
+
+  margin: 0;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  
 }
+
 
 .foliage {
   opacity: 50%;
-}
-
-body {
-  background-image: url("images/foliagefinal1.jpg");
-  background-size: cover;
 }
 
 .container {
@@ -105,6 +108,33 @@ box-shadow: 22px 26px 14px 4px rgba(0,0,0,0.87);
   text-align: center;
 }
 
-.card {
- 
+.textBlackBackground {
+  -webkit-box-shadow: -6px 5px 14px 42px rgba(0,0,0,0.87);
+-moz-box-shadow: -6px 5px 14px 42px rgba(0,0,0,0.87);
+box-shadow: -6px 5px 14px 42px rgba(0,0,0,0.87);
+
+background-color: black;
+
+padding: 50px;
+margin: 50px;
 }
+
+.textBlackBackgroundNatal {
+  -webkit-box-shadow: -6px 5px 14px 42px rgba(0,0,0,0.87);
+  -moz-box-shadow: -6px 5px 14px 42px rgba(0,0,0,0.87);
+  box-shadow: -6px 5px 14px 42px rgba(0,0,0,0.87);
+  
+  background-color: black;
+  
+  padding: 30px;
+  margin: 100px;
+}
+
+.carouselTitles {
+  font-size: 20px;
+  color: white; 
+  text-align: left;
+  text-decoration: none;
+  text-align: left;
+}
+

@@ -13,7 +13,7 @@ function Meditation() {
       <div class="card mb-5">
       <img src="/images/Meditate.png" class="card-img-top" alt="..."/>
         <div class="card-body">
-        
+        <div class="carouselTitles">Meditation: Finding Inner Peace</div>
         </div>
       </div>
       </Link>
@@ -22,7 +22,7 @@ function Meditation() {
       <div class="card d-none d-md-block">
       <img src="/images/lotscandle.png" class="card-img-top" alt="..."/>
         <div class="card-body">
-        
+        <div class="carouselTitles">How Candle Magik Enhances Meditation</div>
         </div>
       </div>
       </Link>
@@ -30,7 +30,7 @@ function Meditation() {
       <div class="card d-none d-md-block">
       <img src="/images/Yoga.png" class="card-img-top" alt="..."/>
         <div class="card-body">
-          
+        <div class="carouselTitles">Incorporating Movement Into Your Practice</div>
         </div>
       </div>
     </div>

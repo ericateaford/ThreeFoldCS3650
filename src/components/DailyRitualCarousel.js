@@ -11,6 +11,7 @@ function DailyRitualCarousel() {
       <div class="card mb-5">
       <img src="/images/Planner.png" class="card-img-top" alt="..."/>
         <div class="card-body">
+        <div class="carouselTitles">How Journaling Can Transform Your Practice</div>
         </div>
       </div>
       
@@ -18,6 +19,7 @@ function DailyRitualCarousel() {
       <div class="card d-none d-md-block">
       <img src="/images/citrine.png" class="card-img-top" alt="..."/>
         <div class="card-body">
+        <div class="carouselTitles">Citrine and It's Benefits</div>
         </div>
       </div>
       </Link>
@@ -26,6 +28,7 @@ function DailyRitualCarousel() {
       <div class="card d-none d-md-block">
       <img src="/images/tree.png" class="card-img-top" alt="..."/>
         <div class="card-body">
+        <div class="carouselTitles">Your Connection to Mother Nature</div>
         </div>
       </div>
       </Link>

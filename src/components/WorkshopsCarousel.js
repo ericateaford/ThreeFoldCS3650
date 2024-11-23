@@ -13,6 +13,7 @@ function WorkshopsCarousel() {
       <div class="card mb-5">
       <img src="/images/Meditate.png" class="card-img-top" alt="..."/>
         <div class="card-body">
+        <div class="carouselTitles">Meditation: Finding Inner Peace</div>
         </div>
       </div>
       </Link>
@@ -21,6 +22,7 @@ function WorkshopsCarousel() {
       <div class="card d-none d-md-block">
       <img src="/images/Tree.png" class="card-img-top" alt="..."/>
         <div class="card-body">
+        <div class="carouselTitles">Your Connection to Mother Nature</div>
         </div>
       </div>
       </Link>
@@ -28,6 +30,7 @@ function WorkshopsCarousel() {
       <div class="card d-none d-md-block">
       <img src="/images/Yoga.png" class="card-img-top" alt="..."/>
         <div class="card-body">
+        <div class="carouselTitles">Yoga Poses for a Deeper Connection</div>
         </div>
       </div>
     </div>

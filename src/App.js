@@ -11,6 +11,7 @@ import Splash from './Splash.js';
 import Splashtwo from './Splashtwo.js';
 // ... import other pages
 
+import './index.css'; 
 import './App.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Collection from './Collection.js';

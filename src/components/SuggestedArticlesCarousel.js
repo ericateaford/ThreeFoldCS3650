@@ -15,6 +15,7 @@ function SuggestedArticlesCarousel() {
       <div class="card mb-5">
       <img src="/images/Rocks.png" class="planner card-img-top"  alt="..."/>
         <div class="card-body">
+        <div class="carouselTitles">Your Guide to Crystals</div>
         </div>
       </div>
 
@@ -25,6 +26,7 @@ function SuggestedArticlesCarousel() {
       <div class="card d-none d-md-block">
       <img src="/images/Stars.png" class="planner card-img-top" alt="..." />
         <div class="card-body">
+        <div class="carouselTitles">The Meaning of Your Moon Sign</div>
         </div>
       </div>
       </Link>
@@ -33,7 +35,7 @@ function SuggestedArticlesCarousel() {
       <div class="card d-none d-md-block">
       <img src="/images/Moon.png" class="planner card-img-top" alt="..." />
         <div class="card-body">
-         
+        <div class="carouselTitles">Moon Magik</div>
         </div>
       </div>
       </Link>    </div>

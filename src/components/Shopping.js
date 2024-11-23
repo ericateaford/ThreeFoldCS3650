@@ -10,16 +10,19 @@ function Shopping() {
       <div class="card mb-5">
       <img src="/images/Sage.png" class="card-img-top" alt="..."/>
         <div class="card-body">
+        <div class="carouselTitles">Sage</div>
         </div>
       </div>
       <div class="card d-none d-md-block">
       <img src="/images/amethyst.png" class="card-img-top" alt="..."/>
         <div class="card-body"> 
+        <div class="carouselTitles">Amethyst</div>
         </div>
       </div>
       <div class="card d-none d-md-block">
       <img src="/images/candle.png" class="card-img-top" alt="..."/>
         <div class="card-body">
+        <div class="carouselTitles">Candles</div>
         </div>
       </div>
     </div>
