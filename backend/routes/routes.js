@@ -26,15 +26,18 @@ router.post("/signup", async (req, res) => {
   
   if (!newItem.username) {
     errors.username = "Entry needs username field";
+  } else {
+    // Check if the username is already being used
+    const existingUser = Object.values(data.users).some(
+      (user) => user.username === newItem.username
+    );
+    if (existingUser) {
+      errors.uniqueUsername = `Username "${newItem.username}" already exists`;
+    }
   }
 
   if (!newItem.password) {
     errors.password = "Entry needs password field";
-  }
-  // Check if the username is already being used
-  const existingUser = Object.values(data.users).some(user => user.username === newItem.username);
-  if (existingUser) {
-    errors.uniqueUsername = `Username "${newItem.username}" already exists`
   }
   
   if (Object.keys(errors).length > 0) {
