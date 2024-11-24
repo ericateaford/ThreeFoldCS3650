@@ -13,7 +13,12 @@ const PORT = 5000;
 
 //allows cross origin requests from frontend
 app.use(bodyParser.json());
-app.use(cors());
+const corsOptions = {
+  origin: 'http://localhost:3000',
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true,
+}
+app.use(cors(corsOptions));
 
 //routes for accessing the data
 app.use(routes);

@@ -1,7 +1,7 @@
 const express = require("express");
-const { readData, writeData } = require("../util");
+const { readData, writeData, createJSONToken } = require("../util");
 const { v4: generateId } = require("uuid");
-const { hash } = require('bcryptjs')
+const { hash, compare } = require("bcryptjs");
 
 const router = express.Router();
 
@@ -22,8 +22,8 @@ router.post("/signup", async (req, res) => {
   if (!newItem) {
     //checks to ensure blank field is not being saved
     return res.status(400).json({ error: "Entry cannot be empty" }); //bad request error
-  } 
-  
+  }
+
   if (!newItem.username) {
     errors.username = "Entry needs username field";
   } else {
@@ -39,16 +39,16 @@ router.post("/signup", async (req, res) => {
   if (!newItem.password) {
     errors.password = "Entry needs password field";
   }
-  
+
   if (Object.keys(errors).length > 0) {
     return res.status(422).json({
       message: "User signup failed due to validation errors.",
       errors,
     });
-  } 
+  }
 
   const userId = generateId();
-  const hashedPass = await hash(newItem.password, 10)
+  const hashedPass = await hash(newItem.password, 10);
 
   data.users[userId] = {
     username: newItem.username,
@@ -61,6 +61,32 @@ router.post("/signup", async (req, res) => {
   res.status(201).json({ id: userId, username: newItem.username });
 });
 
-// TODO Need other routes to do things like login and add things to collections/notes/etc
+router.post("/login", async (req, res) => {
+  const username = req.body.username;
+  const password = req.body.password;
+  const data = readData();
+
+  const user = Object.values(data.users).find(
+    (user) => user.username === username
+  );
+  if (!user) {
+    return res.status(401).json({ message: "Authentication failed" });
+  }
+
+  const pwIsValid = await compare(password, user.password);
+  if (!pwIsValid) {
+    return res.status(422).json({
+      message: "Invalid credentials",
+      errors: { credentials: "Invalid username or password" },
+    });
+  }
+
+  // Frontend needs to store the token (and a 1 hr expiration) in local storage
+  // To logout, delete the token and expiration from local storage
+  const token = createJSONToken(username);
+  res.json({ token });
+});
+
+// TODO Need other routes for adding things to collections/notes/etc
 
 module.exports = router;
