@@ -14,7 +14,7 @@ router.get("/data", (req, res) => {
   }
 });
 
-router.post("/user/add", async (req, res) => {
+router.post("/signup", async (req, res) => {
   const data = readData();
   let errors = {};
 
@@ -31,7 +31,11 @@ router.post("/user/add", async (req, res) => {
   if (!newItem.password) {
     errors.password = "Entry needs password field";
   }
-  // TODO Should also check if the username is already being used
+  // Check if the username is already being used
+  const existingUser = Object.values(data.users).some(user => user.username === newItem.username);
+  if (existingUser) {
+    errors.uniqueUsername = `Username "${newItem.username}" already exists`
+  }
   
   if (Object.keys(errors).length > 0) {
     return res.status(422).json({
