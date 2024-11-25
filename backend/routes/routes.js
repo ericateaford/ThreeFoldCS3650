@@ -105,8 +105,8 @@ router.put("/collection/add", verifyToken, async (req, res) => {
     return res.status(404).json({ message: "User not found" });
   }
 
-  if(!collectionItem.id) {
-    return res.status(422).json({ message: "Entry needs an item id" })
+  if (!collectionItem.id) {
+    return res.status(422).json({ message: "Entry needs an item id" });
   }
 
   //if the item ID isn't already within the user's collection, add it
@@ -121,6 +121,21 @@ router.put("/collection/add", verifyToken, async (req, res) => {
   //update JSON list with changes
   writeData(data);
   res.status(201).json({ message: "Item added successfully" });
+});
+
+// Route to get the collection of the user
+router.get("/collection", verifyToken, async (req, res) => {
+  const username = req.user.username;
+  const data = readData();
+
+  //search for user matching session value
+  const userId = getUserId(username);
+  if (!userId) {
+    return res.status(404).json({ message: "User not found" });
+  }
+
+  const collection = data.users[userId].collection;
+  res.status(201).json({ collection: collection });
 });
 
 // TODO Need other routes for adding things to collections/notes/etc
