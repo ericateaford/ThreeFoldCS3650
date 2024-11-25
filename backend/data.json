@@ -1,2 +1,11 @@
-//used to store data from threefold app
-[]
+{
+  "users": {
+    "c69bd431-2983-4a4a-bd8a-a0a3f76f7d87": {
+      "username": "test user",
+      "password": "$2a$12$YuwtOW4w/FZaqRhtx/bU..mmcVFq9nOzSZ946N8Yzx5N8X9UwGEpi",
+      "collection": {},
+      "notes": {},
+      "natal-chart": {}
+    }
+  }
+}
