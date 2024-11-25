@@ -87,6 +87,33 @@ router.post("/login", async (req, res) => {
   res.json({ token });
 });
 
+//Route for adding item to a users collection from collections page
+router.put("/Collection", async (req, res) => {
+    //need to find a valid way to get the user ID from the session/local storage
+    const username = JSON.stringify(req.token);// probably wont work, just a guess/placeholder
+    const { collectionItem } = req.body.item;
+    const data = readData();
+
+    //search for user matching session value
+    const { user } = data.users.find(
+        user => user.username === username
+    );
+
+    if (!user) {
+        return res.status(404).send('User not found');
+    }
+
+    //if the item ID isn't already within the user's collection, add it
+    if (!user.collection.includes(collectionItem.id)) {
+        user.collection.push(collectionItem.id);
+    } else { //if the item is already on the list, return an error
+        return res.status(400).send("ID already exists within user's collection");
+    }
+    //update JSON list with changes
+    writeData(data);
+
+
+});
 // TODO Need other routes for adding things to collections/notes/etc
 
 module.exports = router;
