@@ -44,9 +44,10 @@ body {
   -webkit-box-shadow: 22px 26px 14px 4px rgba(0,0,0,0.87);
 -moz-box-shadow: 22px 26px 14px 4px rgba(0,0,0,0.87);
 box-shadow: 22px 26px 14px 4px rgba(0,0,0,0.87);
+
 }
 .carousel-inner {
-  padding: 0px; 
+  padding: 15px; 
   
 }
 .carousel-control-prev,
@@ -62,6 +63,7 @@ box-shadow: 22px 26px 14px 4px rgba(0,0,0,0.87);
 .carouselheading {
   margin-top: 80px;
 }
+
 
 
 .blackbar {
@@ -131,11 +133,12 @@ margin: 50px;
 }
 
 .carouselTitles {
-  font-size: 20px;
+  font-size: 18px;
   color: white; 
   text-align: left;
   text-decoration: none;
   text-align: left;
+  word-wrap: break-word;
 }
 
 
