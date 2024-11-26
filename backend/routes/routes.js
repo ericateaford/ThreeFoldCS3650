@@ -1,10 +1,18 @@
 const express = require("express");
-const { readData, writeData, createJSONToken } = require("../util");
+const {
+  readData,
+  writeData,
+  createJSONToken,
+  getUser,
+  getUserId,
+  verifyToken,
+} = require("../util");
 const { v4: generateId } = require("uuid");
 const { hash, compare } = require("bcryptjs");
 
 const router = express.Router();
 
+// Route to get all data in data.json
 router.get("/data", (req, res) => {
   try {
     const data = readData();
@@ -14,6 +22,7 @@ router.get("/data", (req, res) => {
   }
 });
 
+// Route to signup a new user
 router.post("/signup", async (req, res) => {
   const data = readData();
   let errors = {};
@@ -28,9 +37,7 @@ router.post("/signup", async (req, res) => {
     errors.username = "Entry needs username field";
   } else {
     // Check if the username is already being used
-    const existingUser = Object.values(data.users).some(
-      (user) => user.username === newItem.username
-    );
+    const existingUser = getUser(newItem.username);
     if (existingUser) {
       errors.uniqueUsername = `Username "${newItem.username}" already exists`;
     }
@@ -53,22 +60,21 @@ router.post("/signup", async (req, res) => {
   data.users[userId] = {
     username: newItem.username,
     password: hashedPass,
-    collection: {},
-    notes: {},
-    "natal-chart": {},
+    collection: [],
+    notes: [],
+    "natal-chart": [],
   };
   writeData(data);
   res.status(201).json({ id: userId, username: newItem.username });
 });
 
+// Route to login
 router.post("/login", async (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
   const data = readData();
 
-  const user = Object.values(data.users).find(
-    (user) => user.username === username
-  );
+  const user = getUser(username);
   if (!user) {
     return res.status(401).json({ message: "Authentication failed" });
   }
@@ -88,32 +94,50 @@ router.post("/login", async (req, res) => {
 });
 
 //Route for adding item to a users collection from collections page
-router.put("/Collection", async (req, res) => {
-    //need to find a valid way to get the user ID from the session/local storage
-    const username = JSON.stringify(req.token);// probably wont work, just a guess/placeholder
-    const { collectionItem } = req.body.item;
-    const data = readData();
+router.put("/collection/add", verifyToken, async (req, res) => {
+  const username = req.user.username;
+  const collectionItem = req.body;
+  const data = readData();
 
-    //search for user matching session value
-    const { user } = data.users.find(
-        user => user.username === username
-    );
+  //search for user matching session value
+  const userId = getUserId(username);
+  if (!userId) {
+    return res.status(404).json({ message: "User not found" });
+  }
 
-    if (!user) {
-        return res.status(404).send('User not found');
-    }
+  if (!collectionItem.id) {
+    return res.status(422).json({ message: "Entry needs an item id" });
+  }
 
-    //if the item ID isn't already within the user's collection, add it
-    if (!user.collection.includes(collectionItem.id)) {
-        user.collection.push(collectionItem.id);
-    } else { //if the item is already on the list, return an error
-        return res.status(400).send("ID already exists within user's collection");
-    }
-    //update JSON list with changes
-    writeData(data);
-
-
+  //if the item ID isn't already within the user's collection, add it
+  if (!data.users[userId].collection.includes(collectionItem.id)) {
+    data.users[userId].collection.push(collectionItem.id);
+  } else {
+    //if the item is already on the list, return an error
+    return res
+      .status(400)
+      .json({ message: "ID already exists within user's collection" });
+  }
+  //update JSON list with changes
+  writeData(data);
+  res.status(201).json({ message: "Item added successfully" });
 });
+
+// Route to get the collection of the user
+router.get("/collection", verifyToken, async (req, res) => {
+  const username = req.user.username;
+  const data = readData();
+
+  //search for user matching session value
+  const userId = getUserId(username);
+  if (!userId) {
+    return res.status(404).json({ message: "User not found" });
+  }
+
+  const collection = data.users[userId].collection;
+  res.status(201).json({ collection: collection });
+});
+
 // TODO Need other routes for adding things to collections/notes/etc
 
 module.exports = router;
