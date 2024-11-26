@@ -35,7 +35,7 @@ function SuggestedArticlesCarousel() {
       <div class="card d-none d-md-block">
       <img src="/images/Moon.png" class="planner card-img-top" alt="..." />
         <div class="card-body">
-        <div class="carouselTitles">Moon Magik</div>
+        <div class="carouselTitles">Moon Magic</div>
         </div>
       </div>
       </Link>    </div>

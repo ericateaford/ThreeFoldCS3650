@@ -27,12 +27,14 @@ function Meditation() {
       </div>
       </Link>
       
+      <Link to="/Movement">
       <div class="card d-none d-md-block">
       <img src="/images/Yoga.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">Incorporating Movement Into Your Practice</div>
         </div>
       </div>
+      </Link>
     </div>
     </div>
   </div>

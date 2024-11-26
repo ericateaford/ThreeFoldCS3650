@@ -8,13 +8,17 @@ function DailyRitualCarousel() {
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="cards-wrapper">
+
+      <Link to="/Journal">
+
       <div class="card mb-5">
       <img src="/images/Planner.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">How Journaling Can Transform Your Practice</div>
         </div>
       </div>
-      
+      </Link>
+
       <Link to="Citrine">
       <div class="card d-none d-md-block">
       <img src="/images/citrine.png" class="card-img-top" alt="..."/>
@@ -32,7 +36,7 @@ function DailyRitualCarousel() {
         </div>
       </div>
       </Link>
-      
+
     </div>
     </div>
   </div>

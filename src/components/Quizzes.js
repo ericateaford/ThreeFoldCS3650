@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 function Quizzes() {
@@ -14,18 +15,25 @@ function Quizzes() {
         <div class="carouselTitles">Which Witch Are You?</div>
         </div>
       </div>
+
+<Link to="/Compatibility">
       <div class="card d-none d-md-block">
         <img src="/images/goat.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">Your Zodiac Sign Compatibility</div>
         </div>
       </div>
+      </Link>
+
+      <Link to="/CrystalZodiac">
       <div class="card d-none d-md-block">
         <img src="/images/citrine.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">Crystals to Compliment Your Zodiac Sign</div>
         </div>
       </div>
+      </Link>
+      
     </div>
     </div>
   </div>

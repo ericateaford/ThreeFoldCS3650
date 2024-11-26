@@ -27,7 +27,7 @@ function AddCollectionCarousel() {
       </div>
       </Link>
 
-      <Link to="/Candle">
+      <Link to="/CandleColors">
       <div class="card d-none d-md-block">
       <img src="/images/candle.png" class="card-img-top" alt="..."/>
         <div class="card-body">

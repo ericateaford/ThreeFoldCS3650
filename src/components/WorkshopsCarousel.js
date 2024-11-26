@@ -27,12 +27,15 @@ function WorkshopsCarousel() {
       </div>
       </Link>
 
+<Link to="/Yoga">
       <div class="card d-none d-md-block">
       <img src="/images/Yoga.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">Yoga Poses for a Deeper Connection</div>
         </div>
       </div>
+      </Link>
+      
     </div>
     </div>
   </div>

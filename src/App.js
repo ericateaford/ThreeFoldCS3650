@@ -28,6 +28,12 @@ import Cards from "./Cards.js";
 import MoonMeaning from "./MoonMeaning.js";
 import Pendulum from "./Pendulum.js";
 import SpellJars from "./SpellJars.js";
+import Journal from "./Journal.js";
+import CandleColors from "./CandleColors.js";
+import Yoga from "./Yoga.js";
+import Movement from "./Movement.js";
+import Compatibility from "./Compatibility.js";
+import CrystalZodiac from "./CrystalZodiac.js";
 
 function App() {
   return (
@@ -80,7 +86,14 @@ function App() {
           <Route path="/Cards" element={<Cards/>}/>
           <Route path="/MoonMeaning" element={<MoonMeaning/>}/>
           <Route path="/Pendulum" element={<Pendulum/>}/>
-          <Route path="/SpellJars" element={<Pendulum/>}/>
+          <Route path="/SpellJars" element={<SpellJars/>}/>
+          <Route path="/Journal" element={<Journal/>}/>
+          <Route path="/CandleColors" element={<CandleColors/>}/>
+          <Route path="/Yoga" element={<Yoga/>}/>
+          <Route path="/Movement" element={<Movement/>}/>
+          <Route path="/Compatibility" element={<Compatibility/>}/>
+          <Route path="/CrystalZodiac" element={<CrystalZodiac/>}/>
+
 
         </Routes>
      
