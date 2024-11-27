@@ -4,7 +4,7 @@ import {Link} from "react-router-dom" //Import link from react-router-dom
 function AddCollectionCarousel() {
     return (
       
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide mb-5" data-ride="carousel">
            <div> <h3 class="carouselheading  text-start">Add to Your Collection</h3> </div>
   <div class="carousel-inner">
     <div class="carousel-item active">

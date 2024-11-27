@@ -19,7 +19,7 @@ const Home = () => {
       <img src="/images/mercuryretrograde.png" class="mercuryretrograde mt-4" alt="logo" />
       <DailyRitualCarousel /> 
       
-      <div class="textBlackBackground">
+      <div class="textBlackBackground mt-5 mb-5">
       <h1 class="float-center">DAILY AFFIRMATION</h1>
       <h5 class="float-center">The world guides you in order to complete your goals</h5>
       </div>

@@ -1,81 +1,97 @@
 import Header from './components/Header.js'
 import React from 'react';
+import SearchBar from './components/SearchBar.js';
 
 
 //creates a list of all collection items, hard coded
 const allCollectionItems = [{
     id: 1,
     name: 'White Candle',
+    description: 'Used to connect with the divine',
     type: 'Candle',
 },
 {
     id: 2,
     name: 'Black Candle',
+    description: 'Used to ground and ward off negative energy',
     type: 'Candle',
 },
 {
     id: 3,
     name: 'Red Candle',
+    description: 'Used in love spells',
     type: 'Candle',
 },
 {
     id: 4,
     name: 'Pink Candle',
+    description: 'Used in strengthening relationships and loving others',
     type: 'Candle',
 },
 {
     id: 5,
     name: 'Blue Candle',
+    description: 'Used to enahnce communication and sleep magic',
     type: 'Candle',
 },
 {
     id: 6,
     name: 'Green Candle',
+    description: 'Used to connect with the earth and its entities',
     type: 'Candle',
 },
 {
     id: 7,
     name: 'Brown Candle',
+    description: 'Used for balance, stability, and all materials things',
     type: 'Candle',
 },
 {
     id: 8,
     name: 'Purple Candle',
+    description: 'Used to connect with higher-self and achieve enlightment',
     type: 'Candle',
 },
 {
     id: 9,
     name: 'Orange Candle',
+    description: 'Used to enhance creativitity and business ventures',
     type: 'Candle',
 },
 {
     id: 10,
     name: 'Yellow Candle',
+    description: 'Used to enhance intellect, wisdom, and knowledge',
     type: 'Candle',
 },
 {
     id: 11,
     name: 'Amethyst',
+    description: 'Used for propehtic dreaming, peaceful sleep, and healing',
     type: 'Crystal',
 },
 {
     id: 12,
     name: 'Clear Quartz',
+    description: 'Used to clear the mind',
     type: 'Crystal',
 },
 {
     id: 13,
     name: 'Citrine',
+    description: 'Used to bring joy into daily interactions',
     type: 'Crystal',
 },
 {
     id: 14,
     name: 'Bloodstone',
+    description: 'Used for healing, strength, and courage',
     type: 'Crystal',
 },
 {
     id: 15,
     name: 'Agate',
+    description: 'Used to welcome riches, happiness, and longetivity',
     type: 'Crystal',
 },
 {
@@ -180,11 +196,13 @@ function ListCollection() {
 const Collection = () => {
     //create list of all items
     const listItems = allCollectionItems.map(item =>
-        <li class="Collection-Items">{item.name} &emsp; &emsp; <button>+</button></li>
+        <li class="Collection-Items">
+            <div class="itemname">{item.name}</div> <br></br> <div class="itemdescripiton">{item.description}</div> &emsp; &emsp; <div class="collectionbutton">+</div></li>
     );
     return (
         <div>
-            <h5 class="float-center">Collection</h5>
+            <SearchBar />
+            <h5 class="itemname float-center">Add to Your Collection</h5>
             <div class="Collection-List">
                 {/*displays entire collection list*/}
                 <ul>{listItems}</ul>

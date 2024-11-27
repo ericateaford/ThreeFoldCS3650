@@ -4,7 +4,7 @@ function Footer() {
   return (
 
 <div class="container">
-<footer class="py-3 my-4">
+<footer class="">
   <ul class="nav justify-content-center border-bottom pb-3">
     <Link to="/splash"></Link>
     <Link to="/splashtwo"></Link>

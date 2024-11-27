@@ -3,7 +3,7 @@ import {Link} from "react-router-dom" //Import link from react-router-dom
 function DailyRitualCarousel() {
     return (
 
-<div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleControls" className="dailyRitual carousel slide mb-5" data-bs-ride="carousel">
   <div> <h3 class="carouselheading text-start">Daily Ritual</h3> </div>
   <div class="carousel-inner">
 
