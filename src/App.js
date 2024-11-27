@@ -32,39 +32,49 @@ import Yoga from "./Yoga.js";
 import Movement from "./Movement.js";
 import Compatibility from "./Compatibility.js";
 import CrystalZodiac from "./CrystalZodiac.js";
+import IntroOne from "./IntroOne.js";
+import IntroTwo from "./IntroTwo.js";
+import IntroThree from "./IntroThree.js";
+import IntroFour from "./IntroFour.js";
+import IntroFive from "./IntroFive.js";
 
 function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/natal">Natal</Link>
-            </li>
-            <li>
-              <Link to="/notes">Notes</Link>
-            </li>
-            <li>
-              <Link to="/search">Search</Link>
-            </li>
-            <li>
-              <Link to="/splash">Splash</Link>
-            </li>
-            <li>
-              <Link to="/splash">Splashtwo</Link>
-            </li>
-            {/* ... other links */}
-          </ul>
-        </nav>
+        {/*<nav>*/}
+        {/*  <ul>*/}
+        {/*    <li>*/}
+        {/*      <Link to="/">Home</Link>*/}
+        {/*    </li>*/}
+        {/*    <li>*/}
+        {/*      <Link to="/natal">Natal</Link>*/}
+        {/*    </li>*/}
+        {/*    <li>*/}
+        {/*      <Link to="/notes">Notes</Link>*/}
+        {/*    </li>*/}
+        {/*    <li>*/}
+        {/*      <Link to="/search">Search</Link>*/}
+        {/*    </li>*/}
+        {/*    <li>*/}
+        {/*      <Link to="/splash">Splash</Link>*/}
+        {/*    </li>*/}
+        {/*    <li>*/}
+        {/*      <Link to="/splash">Splashtwo</Link>*/}
+        {/*    </li>*/}
+        {/*    */}{/* ... other links */}
+        {/*  </ul>*/}
+        {/*</nav>*/}
       </div>
         {/* A <Routes> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Routes>
-          <Route path="/" element={<Home />} />
+          <Routes>
+              <Route path="/" element={<IntroOne />} />
+              <Route path="/IntroTwo" element={<IntroTwo />} />
+              <Route path="/IntroThree" element={<IntroThree />} />
+              <Route path="/IntroFour" element={<IntroFour />} />
+              <Route path="/IntroFive" element={<IntroFive />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/natal" element={<Natal />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/search" element={<Search />} />
