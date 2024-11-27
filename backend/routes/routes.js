@@ -94,7 +94,7 @@ router.post("/login", async (req, res) => {
 });
 
 //Route for adding item to a users collection from collections page
-router.put("/collection/add", verifyToken, async (req, res) => {
+router.put("/Collection/add", verifyToken, async (req, res) => {
   const username = req.user.username;
   const collectionItem = req.body;
   const data = readData();
@@ -124,7 +124,7 @@ router.put("/collection/add", verifyToken, async (req, res) => {
 });
 
 // Route to get the collection of the user
-router.get("/collection", verifyToken, async (req, res) => {
+router.get("/Collection", verifyToken, async (req, res) => {
   const username = req.user.username;
   const data = readData();
 
@@ -138,6 +138,51 @@ router.get("/collection", verifyToken, async (req, res) => {
   res.status(201).json({ collection: collection });
 });
 
-// TODO Need other routes for adding things to collections/notes/etc
+//route for adding a note 
+router.put("/Notes/add", verifyToken, async (req, res) => {
+    const username = req.user.username;
+    const note = req.body;
+    const data = readData();
+
+    //search for user matching session value
+    const userId = getUserId(username);
+    if (!userId) {
+        return res.status(404).json({ message: "User not found" });
+    }
+
+    //checks to ensure a valid note ID was provided
+    if (!note.id) {
+        return res.status(422).json({ message: "Entry needs a note id" });
+    }
+
+    //if the note ID isn't already within the user's notes list, add it
+    if (!data.users[userId].notes.includes(note.id)) {
+        data.users[userId].notes.push(note.id);
+    } else {
+        //if the note is already on the list, return an error
+        return res
+            .status(400)
+            .json({ message: "ID already exists within user's collection" });
+    }
+    //update JSON list with changes
+    writeData(data);
+    res.status(201).json({ message: "Item added successfully" });
+});
+
+// Route to get the notes of the user
+router.get("/Notes", verifyToken, async (req, res) => {
+    const username = req.user.username;
+    const data = readData();
+
+    //search for user matching session value
+    const userId = getUserId(username);
+    if (!userId) {
+        return res.status(404).json({ message: "User not found" });
+    }
+
+    //pulls notes saved to user profile
+    const notes = data.users[userId].notes;
+    res.status(201).json({ notes: notes });
+});
 
 module.exports = router;
