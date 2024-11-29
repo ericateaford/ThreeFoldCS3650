@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from './Home.js'; 
 
 
 // Intro.js
@@ -14,7 +13,7 @@ const IntroFive = () => {
             </div>
 
             {/*<img src={PiscesNatal} class="piscesnatal" alt="logo" />*/}
-            <Link to = "/Home"><button type="button" class="btn btn-dark btn-lg mt-3">Next</button></Link>
+            <Link to = "/Splashtwo"><button type="button" class="btn btn-dark btn-lg mt-3">Next</button></Link>
 
 
         </div>
