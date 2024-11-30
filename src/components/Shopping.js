@@ -7,19 +7,30 @@ function Shopping() {
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="cards-wrapper">
+        
+      <div class="d-flex flex-row">
+  <div class="p-2">
       <div class="card mb-5">
       <img src="/images/Sage.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">Sage</div>
         </div>
       </div>
-      <div class="card d-none d-md-block">
+      </div>
+   
+
+  <div class="p-2">
+
+  <div class="card">
       <img src="/images/amethyst.png" class="card-img-top" alt="..."/>
         <div class="card-body"> 
         <div class="carouselTitles">Amethyst</div>
         </div>
       </div>
-      <div class="card d-none d-md-block">
+  </div>
+  <div class="p-2">
+
+  <div class="card">
       <img src="/images/candle.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">Candles</div>
@@ -28,6 +39,11 @@ function Shopping() {
     </div>
     </div>
   </div>
+  </div>
+</div>
+
+
+  
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only"></span>

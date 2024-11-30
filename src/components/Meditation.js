@@ -17,18 +17,21 @@ function Meditation() {
         </div>
       </div>
       </Link>
-
-      <Link to="/Candle">
-      <div class="card d-none d-md-block">
+      
+    <div class="d-flex flex-row">
+  <div class="p-2">   <Link to="/Candle">
+      <div class="card">
       <img src="/images/lotscandle.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">How Candle Magik Enhances Meditation</div>
         </div>
       </div>
-      </Link>
-      
-      <Link to="/Movement">
-      <div class="card d-none d-md-block">
+      </Link></div>
+  
+  <div class="p-2">
+
+  <Link to="/Movement">
+      <div class="card">
       <img src="/images/Yoga.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">Incorporating Movement Into Your Practice</div>
@@ -38,6 +41,11 @@ function Meditation() {
     </div>
     </div>
   </div>
+  </div>
+</div>
+
+
+  
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only"></span>

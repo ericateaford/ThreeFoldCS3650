@@ -19,17 +19,21 @@ function Tarot() {
       </div>
       </Link>
 
-      <Link to="/MoonMeaning">
-      <div class="card d-none d-md-block">
+
+  <div class="d-flex flex-row">
+
+  <div class="p-2">   <Link to="/MoonMeaning">
+      <div class="card">
         <img src="/images/Sky.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">The Moon and Her Meaning In Tarot</div>
         </div>
       </div>
-      </Link>
+      </Link></div>
+  <div class="p-2">
 
-      <Link to="/MoonSign">
-      <div class="card d-none d-md-block">
+        <Link to="/MoonSign">
+      <div class="card">
         <img src="/images/Stars.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">Your Meaning in the Universe</div>
@@ -39,6 +43,12 @@ function Tarot() {
     </div>
     </div>
   </div>
+
+  </div>
+</div>
+
+
+  
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only"></span>

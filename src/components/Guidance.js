@@ -19,17 +19,23 @@ function Guidance() {
       </div>
       </Link>
 
-      <Link to="/SpellJars">
-      <div class="card d-none d-md-block">
+  <div class="d-flex flex-row">
+  <div class="p-2">
+
+  <Link to="/SpellJars">
+      <div class="card">
       <img src="/images/rose.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">Spell Jars and Letting Go</div>
         </div>
       </div>
       </Link>
+  </div>
+  <div class="p-2">
+     
 
-      <Link to="/Citrine">
-      <div class="card d-none d-md-block">
+  <Link to="/Citrine">
+      <div class="card ">
       <img src="/images/Rocks.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">Your Guide to Crystals</div>
@@ -39,6 +45,11 @@ function Guidance() {
     </div>
     </div>
   </div>
+  </div>
+</div>
+
+
+
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only"></span>

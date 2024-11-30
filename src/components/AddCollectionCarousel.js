@@ -3,8 +3,9 @@ import {Link} from "react-router-dom" //Import link from react-router-dom
 
 function AddCollectionCarousel() {
     return (
-      
-        <div id="carouselExampleControls" class="carousel slide mb-5" data-ride="carousel">
+  
+
+  <div id="carouselExampleControls" class="carousel slide mb-5" data-ride="carousel">
            <div> <h3 class="carouselheading  text-start">Add to Your Collection</h3> </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -18,17 +19,19 @@ function AddCollectionCarousel() {
       </div>
       </Link>
 
+      <div class="d-flex flex-row">
+  <div class="p-2">
       <Link to="/Citrine">
-      <div class="card d-none d-md-block">
+      <div class="card">
       <img src="/images/citrine.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">Citrine and Mood Improvement</div>
         </div>
       </div>
-      </Link>
-
+      </Link></div>
+  <div class="p-2">
       <Link to="/CandleColors">
-      <div class="card d-none d-md-block">
+      <div class="card ">
       <img src="/images/candle.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">Candles Colours and Their Meanings</div>
@@ -41,6 +44,9 @@ function AddCollectionCarousel() {
     </div>
    
   </div>
+</div>
+</div>
+
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" aria-label="Previous">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only"></span>

@@ -18,8 +18,10 @@ function WorkshopsCarousel() {
       </div>
       </Link>
 
-      <Link to="/Nature">
-      <div class="card d-none d-md-block">
+ <div class="d-flex flex-row">
+  <div class="p-2">
+  <Link to="/Nature">
+      <div class="card">
       <img src="/images/Tree.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">Your Connection to Mother Nature</div>
@@ -27,15 +29,22 @@ function WorkshopsCarousel() {
       </div>
       </Link>
 
-<Link to="/Yoga">
-      <div class="card d-none d-md-block">
+  </div>
+  <div class="p-2">
+
+  <Link to="/Yoga">
+      <div class="card">
       <img src="/images/Yoga.png" class="card-img-top" alt="..."/>
         <div class="card-body">
         <div class="carouselTitles">Yoga Poses for a Deeper Connection</div>
         </div>
       </div>
       </Link>
-      
+
+
+  </div>
+</div>
+
     </div>
     </div>
   </div>
