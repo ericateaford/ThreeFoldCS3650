@@ -24,8 +24,8 @@ body {
 }
 
 .container {
-  background-color: black;
-  width: 100vw; 
+  background-color: black; 
+  padding: 0px;
 }
 
 .cards-wrapper {
@@ -69,14 +69,14 @@ box-shadow: 22px 26px 14px 4px rgba(0,0,0,0.87);
 
 .blackbar {
   background-color: black;
-  height: 130px;
+  height: 110px;
   width: 100vw; 
   margin-left: -50px;
   
 }
 
 .piscesnatal, .runessearch, .activity, .mercuryretrograde {
-  height: 450px;
+  height: 350px;
   width: 100vw;
   margin-left: -50px;
 }
@@ -97,13 +97,14 @@ box-shadow: 22px 26px 14px 4px rgba(0,0,0,0.87);
 }
 
 .logo {
-  width: 120px;
-  height: 90px;
+  width: 90px;
+  height: 70px;
   margin: 15px;
 }
 
 .crystalnav {
-  margin: 0px 20px 10px 20px;
+  margin: 0px 20px 3px 20px;
+  padding: 10px;
 }
 
 .iconWording {
@@ -168,23 +169,26 @@ li {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 700%);
+  transform: translate(-50%, 100%);
   -ms-transform: translate(-50%, -50%);
   background-color: black;
   color: white;
-  padding: 16px 30px;
+  padding: 13px 20px;
+  border-radius: 15px;
   
 }
+
 
 .runesgraybox {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 10%);
+  transform: translate(-50%, -20%);
   -ms-transform: translate(-50%, -50%);
   background-color: gray;
   color: white;
-  padding: 150px 250px;
+  padding: 100px 170px;
+  border-radius: 25px;
 }
 
 .runestext {
@@ -193,6 +197,43 @@ li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 10%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* INTRO FOR HOME PAGE */
+.buttonhome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 110%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  padding: 13px 20px;
+  border-radius: 15px;
+  
+}
+
+
+.homegraybox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: gray;
+  color: white;
+  padding: 100px 170px;
+  border-radius: 25px;
+}
+
+.hometext {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
   -ms-transform: translate(-50%, -50%);
   color: white;
 }
@@ -225,3 +266,7 @@ font-size: 35px;
   font-size: 20px;
 }
 
+.icon {
+  height: 42px;
+  width: 42px;
+}

@@ -16,7 +16,14 @@ const Home = () => {
     
     <div>
       <Header />
-      <img src="/images/mercuryretrograde.png" class="mercuryretrograde mt-4" alt="logo" />
+      <img src="/images/bigmoon.png" class="mercuryretrograde mt-4" alt="logo" />
+      <div class="homegraybox">
+  <button type="button" class="buttonhome btn btn-dark btn-lg">Learn More</button>
+      </div>
+      <div class="hometext">
+<h2>Mercury in Retrograde</h2>
+  <h6>You may experience a series of shifts incommunication and technology</h6>
+</div>
       <DailyRitualCarousel /> 
       
       <div class="textBlackBackground mt-5 mb-5">
@@ -25,7 +32,7 @@ const Home = () => {
       </div>
 
       <SuggestedArticlesCarousel />    
-      <img src="/images/activity.png" class="activity mt-5" alt="logo" />
+      <img src="/images/moons.png" class="activity mt-5" alt="logo" />
 
       <WorkshopsCarousel />    
       <AddCollectionCarousel />  
