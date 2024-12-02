@@ -272,6 +272,11 @@ font-size: 35px;
   height: 42px;
   width: 42px;
 }
+.search-button {
+    padding: 2px;
+    margin: 5px;
+    border-radius: 5px;
+}
 
 /* CAROUSEL TESTING IMAGE SIZE */
 .card {
