@@ -7,8 +7,10 @@ const IntroTwo = () => {
 
         <div>
             <div class="textBlackBackgroundNatal">
-                <h1 class="float-center mb-3">Progress your journey</h1>
-                <h5 class="float-center mb-5">Dive further into your practice by reading articles that interest you</h5>
+                <img src="/images/road.png" class="splashlogo" alt="logo" />
+
+                <h1 class="splashheader">Progress your journey</h1>
+                <h5 class="splashheader">Dive further into your practice by reading articles that interest you</h5>
             </div>
 
             {/*<img src={PiscesNatal} class="piscesnatal" alt="logo" />*/}

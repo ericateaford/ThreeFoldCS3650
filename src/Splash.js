@@ -1,24 +1,30 @@
-
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 
 const Splash = () => {
   return (
 
 <div>
+          <div class="loginform">
+              <img src="/images/logo.png" class="splashlogo" alt="logo" />
 
+              <div class="login-container">
+              <h1 class = "login-label">Log in</h1>
+              <input
+                  className={'login-box'}
+                  placeholder="Username"
+              />
+              <br />
+              <input
+                  className={'login-box'}
+                  placeholder="Password"
+                  />
+              <br/>
+                  <Link to="/Home"><button type="button" class="btn btn-dark btn-lg mt-3">Login</button></Link>
+              </div>
 
-<img src="/images/logo.png" class="logo mt-4" alt="logo" />
-
-<h1 class="float-center mt-4">Three-Fold</h1>
-<h4 class="float-center mt-3 mb-3">Your guide to revolutionize your spiritual journey</h4>
-<div class="searchbar col-6 mx-auto">
-<img src="/images/Searchbarusername.png" class="mb-5" alt="logo" />
-<img src="/images/Searchbarpassword.png" class="logo" alt="logo" /> 
-<h6 class="float-center mt-4">Forgot Password</h6>
-
-<button type="button" class="btn btn-dark btn-lg mt-5">Log In</button>
-<h6 class="float-center mt-4">Sign Up</h6>
-</div>
+            <p class="login-link">Sign Up</p>
+        </div>
 </div>
 
 );

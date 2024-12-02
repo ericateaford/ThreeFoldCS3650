@@ -8,10 +8,10 @@ const Splashtwo = () => {
 <div>
 
 
-<img src="/images/logo.png" class="logo" alt="logo" />
+<img src="/images/logo.png" class="splashlogo" alt="logo" />
 
-<h1 class="float-center">Three Fold</h1>
-<h4 class="float-center">Your guide to revolutionize your spiritual journey</h4>
+<h1 class="splashheader">Three Fold</h1>
+<h4 class="splashheader">Your guide to revolutionize your spiritual journey</h4>
 <Link to = "/Splash"><button type="button" class="btn btn-dark btn-lg mt-3">Next</button></Link>
 
 

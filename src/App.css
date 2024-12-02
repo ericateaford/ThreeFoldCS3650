@@ -280,3 +280,49 @@ font-size: 35px;
   
 }
 
+/* Splash pages */
+
+.splashlogo {
+    height: 250px;
+    width: 250px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.splashheader {
+    padding: 15px;
+    margin: 10px;
+}
+
+/* Login form */
+
+.loginform {
+    background-color: lightgray;
+    padding: 20px;
+    margin: 20px;
+    -webkit-box-shadow: -6px 5px 14px 42px rgba(0,0,0,0.87);
+    -moz-box-shadow: -6px 5px 14px 42px rgba(0,0,0,0.87);
+    box-shadow: -6px 5px 14px 42px rgba(0,0,0,0.87);
+    background-color: black;
+    padding: 50px;
+    margin: 50px;
+}
+
+.login-label {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.login-container {
+    border-color: white;
+    border: solid;
+    border-radius: 3em;
+    padding: 20px;
+    margin: 20px;
+}
+
+.login-box {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+

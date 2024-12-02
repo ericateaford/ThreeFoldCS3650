@@ -7,8 +7,9 @@ const IntroFour = () => {
 
         <div>
             <div class="textBlackBackgroundNatal">
-                <h1 class="float-center mb-3">Organize your collection</h1>
-                <h5 class="float-center mb-5">Organize your collection by adding items within the app</h5>
+                <img src="/images/Planner.png" class="splashlogo" alt="logo" />
+                <h1 class="splashheader">Organize your collection</h1>
+                <h5 class="splashheader">Organize your collection by adding items within the app</h5>
             </div>
 
             {/*<img src={PiscesNatal} class="piscesnatal" alt="logo" />*/}
