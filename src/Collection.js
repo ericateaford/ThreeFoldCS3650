@@ -1,10 +1,10 @@
 import Header from './components/Header.js'
 import React, { useState } from 'react';
-//import SearchBar from './components/SearchBar.js';
+import Footer from './components/Footer.js'
 
 
 
-
+//Can be used fot future filtering needs
 //gathers all candles from collection items
 //const candleItems = allCollectionItems.filter(item => item.type === 'Candle');
 //gathers all ingredients from collection items
@@ -236,6 +236,9 @@ const Collection = () => {
 
     return (
         <div>
+            <Header />
+            <div>
+        <br/>
             <h5 class="itemname float-center">Add to Your Collection</h5>
             <div class="Collection-List">
                 <input
@@ -258,9 +261,12 @@ const Collection = () => {
                 })
                     }
                 </ul>
-                
+                </div>
             </div>
+            <br/>
+            <Footer /> 
         </div>
+
     );
 }
 
