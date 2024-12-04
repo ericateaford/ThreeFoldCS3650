@@ -1,5 +1,3 @@
-import Splash from '.Splash';
-
 const express = require("express");
 const {
   readData,
@@ -71,7 +69,7 @@ router.post("/signup", async (req, res) => {
 });
 
 // Route to login
-router.post("/Splash", async (req, res) => {
+router.post("/login", async (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
   const data = readData();
