@@ -23,7 +23,7 @@ const Home = () => {
       <div class="hometext">
 <h2>Mercury in Retrograde</h2>
   <h6>You may experience a series of shifts incommunication and technology</h6>
-</div>
+</div> <br></br> <br></br> <br></br> <br></br>
       <DailyRitualCarousel /> 
       
       <div class="textBlackBackground mt-5 mb-5">

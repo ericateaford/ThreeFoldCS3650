@@ -18,7 +18,6 @@ const Search = () => {
 
 <Header />
 <div className="col-12 mx-auto">
-<SearchBar />
 <img src="/images/runessearch.png" class="runessearch mt-4" alt="logo" />
 <div class="runesgraybox">
   <button type="button" class="learnmorebutton btn btn-dark btn-lg">Learn More</button>
@@ -28,6 +27,7 @@ const Search = () => {
   <h6>Connected to Norse Mythology, runes may be your next divination tool.</h6>
 </div>
 
+<br></br><br></br><br></br><br></br>
 <Meditation />
 <Tarot />
 <Guidance />
